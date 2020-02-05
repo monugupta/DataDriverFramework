@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-DataDriverFramework">
+              <span class="suite-name border-failed">DataDriverFramework</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-DataDriverFramework">
+                    <span>D:\Selenium Prerequesties\Workspace\src\test\resources\runners\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-DataDriverFramework">
+                    <span class="test-stats">4 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-DataDriverFramework">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-DataDriverFramework">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-DataDriverFramework">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-DataDriverFramework">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-DataDriverFramework">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">15 methods, 1 failed,  3 skipped,  11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-DataDriverFramework" class="hide-methods failed suite-DataDriverFramework"> (hide)</a> <!-- hide-methods failed suite-DataDriverFramework -->
+                      <a href="#" panel-name="suite-DataDriverFramework" class="show-methods failed suite-DataDriverFramework"> (show)</a> <!-- show-methods failed suite-DataDriverFramework -->
+                    </span>
+                    <div class="method-list-content failed suite-DataDriverFramework">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-DataDriverFramework" title="com.rajat.Testcases.BankManagerLoginTest" hash-for-method="bankManagerLoginTest">bankManagerLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-DataDriverFramework -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-DataDriverFramework" class="hide-methods skipped suite-DataDriverFramework"> (hide)</a> <!-- hide-methods skipped suite-DataDriverFramework -->
+                      <a href="#" panel-name="suite-DataDriverFramework" class="show-methods skipped suite-DataDriverFramework"> (show)</a> <!-- show-methods skipped suite-DataDriverFramework -->
+                    </span>
+                    <div class="method-list-content skipped suite-DataDriverFramework">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-DataDriverFramework" title="com.rajat.Testcases.AddCustomerTest" hash-for-method="addCustomerTest(qq, gupta, 201303.0, Customer added successfully, N)">addCustomerTest(qq, gupta, 201303.0, Customer added successfully, N)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-DataDriverFramework" title="com.rajat.Testcases.AddCustomerTest" hash-for-method="addCustomerTest(tt, gupta, 201304.0, Customer added successfully, N)">addCustomerTest(tt, gupta, 201304.0, Customer added successfully, N)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-DataDriverFramework" title="com.rajat.Testcases.BankManagerLoginTest" hash-for-method="bankManagerLoginTestt">bankManagerLoginTestt</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-DataDriverFramework -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-DataDriverFramework" class="hide-methods passed suite-DataDriverFramework"> (hide)</a> <!-- hide-methods passed suite-DataDriverFramework -->
+                      <a href="#" panel-name="suite-DataDriverFramework" class="show-methods passed suite-DataDriverFramework"> (show)</a> <!-- show-methods passed suite-DataDriverFramework -->
+                    </span>
+                    <div class="method-list-content passed suite-DataDriverFramework">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-DataDriverFramework" title="com.rajat.Testcases.AddCustomerTest" hash-for-method="addCustomerTest(tt, gupta, 201301.0, Customer added successfully, Y)">addCustomerTest(tt, gupta, 201301.0, Customer added successfully, Y)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-DataDriverFramework" title="com.rajat.Testcases.AddCustomerTest" hash-for-method="addCustomerTest(uu, new, 201304.0, Customer added successfully, Y)">addCustomerTest(uu, new, 201304.0, Customer added successfully, Y)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-DataDriverFramework" title="com.rajat.Testcases.AddCustomerTest" hash-for-method="addCustomerTest(ww, gupta, 201302.0, Customer added successfully, Y)">addCustomerTest(ww, gupta, 201302.0, Customer added successfully, Y)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-DataDriverFramework" title="com.rajat.Testcases.AddCustomerTest" hash-for-method="addCustomerTest(dd, new, 201304.0, Customer added successfully, Y)">addCustomerTest(dd, new, 201304.0, Customer added successfully, Y)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-DataDriverFramework" title="com.rajat.Testcases.AddNewCustomerTest" hash-for-method="addNewCustomerTest({postCode=201304.0, last_name=khan, first_name=dd, runmode=Y, alert=Customer added successfully})">addNewCustomerTest({postCode=201304.0, last_name=khan, first_name=dd, runmode=Y, alert=Customer added successfully})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-DataDriverFramework" title="com.rajat.Testcases.AddNewCustomerTest" hash-for-method="addNewCustomerTest({postCode=201302.0, last_name=khan, first_name=ww, runmode=Y, alert=Customer added successfully})">addNewCustomerTest({postCode=201302.0, last_name=khan, first_name=ww, runmode=Y, alert=Customer added successfully})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-DataDriverFramework" title="com.rajat.Testcases.AddNewCustomerTest" hash-for-method="addNewCustomerTest({postCode=201304.0, last_name=khan, first_name=uu, runmode=Y, alert=Customer added successfully})">addNewCustomerTest({postCode=201304.0, last_name=khan, first_name=uu, runmode=Y, alert=Customer added successfully})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-DataDriverFramework" title="com.rajat.Testcases.AddNewCustomerTest" hash-for-method="addNewCustomerTest({postCode=201303.0, last_name=khan, first_name=qq, runmode=Y, alert=Customer added successfully})">addNewCustomerTest({postCode=201303.0, last_name=khan, first_name=qq, runmode=Y, alert=Customer added successfully})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-DataDriverFramework" title="com.rajat.Testcases.AddNewCustomerTest" hash-for-method="addNewCustomerTest({postCode=201304.0, last_name=khan, first_name=tt, runmode=Y, alert=Customer added successfully})">addNewCustomerTest({postCode=201304.0, last_name=khan, first_name=tt, runmode=Y, alert=Customer added successfully})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-DataDriverFramework" title="com.rajat.Testcases.AddNewCustomerTest" hash-for-method="addNewCustomerTest({postCode=201301.0, last_name=khan, first_name=tt, runmode=Y, alert=Customer added successfully})">addNewCustomerTest({postCode=201301.0, last_name=khan, first_name=tt, runmode=Y, alert=Customer added successfully})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-DataDriverFramework" title="com.rajat.Testcases.OpenAccountTest" hash-for-method="openAccountTest(dd new, Rupee)">openAccountTest(dd new, Rupee)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-DataDriverFramework -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-DataDriverFramework" class="panel DataDriverFramework">
+          <div class="suite-DataDriverFramework-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.rajat.Testcases.BankManagerLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankManagerLoginTest">
+                  </a> <!-- bankManagerLoginTest -->
+                  <span class="method-name">bankManagerLoginTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at com.rajat.Testcases.BankManagerLoginTest.bankManagerLoginTest(BankManagerLoginTest.java:28)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DataDriverFramework-class-failed -->
+          <div class="suite-DataDriverFramework-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.rajat.Testcases.BankManagerLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankManagerLoginTestt">
+                  </a> <!-- bankManagerLoginTestt -->
+                  <span class="method-name">bankManagerLoginTestt</span>
+                  <div class="stack-trace">org.testng.SkipException: Runmode is NO
+	at com.rajat.listners.CustomListeners.onTestStart(CustomListeners.java:105)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DataDriverFramework-class-skipped -->
+          <div class="suite-DataDriverFramework-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.rajat.Testcases.AddCustomerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCustomerTest(qq, gupta, 201303.0, Customer added successfully, N)">
+                  </a> <!-- addCustomerTest(qq, gupta, 201303.0, Customer added successfully, N) -->
+                  <span class="method-name">addCustomerTest</span>
+                  <span class="parameters">(qq, gupta, 201303.0, Customer added successfully, N)</span>
+                  <div class="stack-trace">org.testng.SkipException: RunMode for this data provider is Off
+	at com.rajat.Testcases.AddCustomerTest.addCustomerTest(AddCustomerTest.java:20)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCustomerTest(tt, gupta, 201304.0, Customer added successfully, N)">
+                  </a> <!-- addCustomerTest(tt, gupta, 201304.0, Customer added successfully, N) -->
+                  <span class="method-name">addCustomerTest</span>
+                  <span class="parameters">(tt, gupta, 201304.0, Customer added successfully, N)</span>
+                  <div class="stack-trace">org.testng.SkipException: RunMode for this data provider is Off
+	at com.rajat.Testcases.AddCustomerTest.addCustomerTest(AddCustomerTest.java:20)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DataDriverFramework-class-skipped -->
+          <div class="suite-DataDriverFramework-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.rajat.Testcases.AddNewCustomerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewCustomerTest({postCode=201304.0, last_name=khan, first_name=dd, runmode=Y, alert=Customer added successfully})">
+                  </a> <!-- addNewCustomerTest({postCode=201304.0, last_name=khan, first_name=dd, runmode=Y, alert=Customer added successfully}) -->
+                  <span class="method-name">addNewCustomerTest</span>
+                  <span class="parameters">({postCode=201304.0, last_name=khan, first_name=dd, runmode=Y, alert=Customer added successfully})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewCustomerTest({postCode=201302.0, last_name=khan, first_name=ww, runmode=Y, alert=Customer added successfully})">
+                  </a> <!-- addNewCustomerTest({postCode=201302.0, last_name=khan, first_name=ww, runmode=Y, alert=Customer added successfully}) -->
+                  <span class="method-name">addNewCustomerTest</span>
+                  <span class="parameters">({postCode=201302.0, last_name=khan, first_name=ww, runmode=Y, alert=Customer added successfully})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewCustomerTest({postCode=201304.0, last_name=khan, first_name=uu, runmode=Y, alert=Customer added successfully})">
+                  </a> <!-- addNewCustomerTest({postCode=201304.0, last_name=khan, first_name=uu, runmode=Y, alert=Customer added successfully}) -->
+                  <span class="method-name">addNewCustomerTest</span>
+                  <span class="parameters">({postCode=201304.0, last_name=khan, first_name=uu, runmode=Y, alert=Customer added successfully})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewCustomerTest({postCode=201303.0, last_name=khan, first_name=qq, runmode=Y, alert=Customer added successfully})">
+                  </a> <!-- addNewCustomerTest({postCode=201303.0, last_name=khan, first_name=qq, runmode=Y, alert=Customer added successfully}) -->
+                  <span class="method-name">addNewCustomerTest</span>
+                  <span class="parameters">({postCode=201303.0, last_name=khan, first_name=qq, runmode=Y, alert=Customer added successfully})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewCustomerTest({postCode=201304.0, last_name=khan, first_name=tt, runmode=Y, alert=Customer added successfully})">
+                  </a> <!-- addNewCustomerTest({postCode=201304.0, last_name=khan, first_name=tt, runmode=Y, alert=Customer added successfully}) -->
+                  <span class="method-name">addNewCustomerTest</span>
+                  <span class="parameters">({postCode=201304.0, last_name=khan, first_name=tt, runmode=Y, alert=Customer added successfully})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewCustomerTest({postCode=201301.0, last_name=khan, first_name=tt, runmode=Y, alert=Customer added successfully})">
+                  </a> <!-- addNewCustomerTest({postCode=201301.0, last_name=khan, first_name=tt, runmode=Y, alert=Customer added successfully}) -->
+                  <span class="method-name">addNewCustomerTest</span>
+                  <span class="parameters">({postCode=201301.0, last_name=khan, first_name=tt, runmode=Y, alert=Customer added successfully})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DataDriverFramework-class-passed -->
+          <div class="suite-DataDriverFramework-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.rajat.Testcases.AddCustomerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCustomerTest(tt, gupta, 201301.0, Customer added successfully, Y)">
+                  </a> <!-- addCustomerTest(tt, gupta, 201301.0, Customer added successfully, Y) -->
+                  <span class="method-name">addCustomerTest</span>
+                  <span class="parameters">(tt, gupta, 201301.0, Customer added successfully, Y)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCustomerTest(uu, new, 201304.0, Customer added successfully, Y)">
+                  </a> <!-- addCustomerTest(uu, new, 201304.0, Customer added successfully, Y) -->
+                  <span class="method-name">addCustomerTest</span>
+                  <span class="parameters">(uu, new, 201304.0, Customer added successfully, Y)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCustomerTest(ww, gupta, 201302.0, Customer added successfully, Y)">
+                  </a> <!-- addCustomerTest(ww, gupta, 201302.0, Customer added successfully, Y) -->
+                  <span class="method-name">addCustomerTest</span>
+                  <span class="parameters">(ww, gupta, 201302.0, Customer added successfully, Y)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCustomerTest(dd, new, 201304.0, Customer added successfully, Y)">
+                  </a> <!-- addCustomerTest(dd, new, 201304.0, Customer added successfully, Y) -->
+                  <span class="method-name">addCustomerTest</span>
+                  <span class="parameters">(dd, new, 201304.0, Customer added successfully, Y)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DataDriverFramework-class-passed -->
+          <div class="suite-DataDriverFramework-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.rajat.Testcases.OpenAccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="openAccountTest(dd new, Rupee)">
+                  </a> <!-- openAccountTest(dd new, Rupee) -->
+                  <span class="method-name">openAccountTest</span>
+                  <span class="parameters">(dd new, Rupee)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DataDriverFramework-class-passed -->
+        </div> <!-- panel DataDriverFramework -->
+        <div panel-name="test-xml-DataDriverFramework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Selenium Prerequesties\Workspace\src\test\resources\runners\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;DataDriverFramework&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;com.rajat.listners.CustomListeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;BankManagerLogin&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.rajat.Testcases.BankManagerLoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- BankManagerLogin --&gt;
+  &lt;test name=&quot;AddCustomer&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.rajat.Testcases.AddCustomerTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AddCustomer --&gt;
+  &lt;test name=&quot;OpenCustomer&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.rajat.Testcases.OpenAccountTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- OpenCustomer --&gt;
+  &lt;test name=&quot;AddNewCustomer&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.rajat.Testcases.AddNewCustomerTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AddNewCustomer --&gt;
+&lt;/suite&gt; &lt;!-- DataDriverFramework --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-DataDriverFramework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for DataDriverFramework</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">BankManagerLogin (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">AddCustomer (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">OpenCustomer (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">AddNewCustomer (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-DataDriverFramework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for DataDriverFramework</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-DataDriverFramework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for DataDriverFramework</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_DataDriverFramework');
+function tableData_DataDriverFramework() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(15);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'openAccountTest')
+data.setCell(0, 2, 'com.rajat.Testcases.OpenAccountTest')
+data.setCell(0, 3, 1804);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'addNewCustomerTest')
+data.setCell(1, 2, 'com.rajat.Testcases.AddNewCustomerTest')
+data.setCell(1, 3, 646);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addCustomerTest')
+data.setCell(2, 2, 'com.rajat.Testcases.AddCustomerTest')
+data.setCell(2, 3, 549);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'addCustomerTest')
+data.setCell(3, 2, 'com.rajat.Testcases.AddCustomerTest')
+data.setCell(3, 3, 524);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'addNewCustomerTest')
+data.setCell(4, 2, 'com.rajat.Testcases.AddNewCustomerTest')
+data.setCell(4, 3, 515);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'addCustomerTest')
+data.setCell(5, 2, 'com.rajat.Testcases.AddCustomerTest')
+data.setCell(5, 3, 514);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'addNewCustomerTest')
+data.setCell(6, 2, 'com.rajat.Testcases.AddNewCustomerTest')
+data.setCell(6, 3, 467);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'addCustomerTest')
+data.setCell(7, 2, 'com.rajat.Testcases.AddCustomerTest')
+data.setCell(7, 3, 459);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'addNewCustomerTest')
+data.setCell(8, 2, 'com.rajat.Testcases.AddNewCustomerTest')
+data.setCell(8, 3, 432);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'addNewCustomerTest')
+data.setCell(9, 2, 'com.rajat.Testcases.AddNewCustomerTest')
+data.setCell(9, 3, 432);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'addNewCustomerTest')
+data.setCell(10, 2, 'com.rajat.Testcases.AddNewCustomerTest')
+data.setCell(10, 3, 287);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'bankManagerLoginTest')
+data.setCell(11, 2, 'com.rajat.Testcases.BankManagerLoginTest')
+data.setCell(11, 3, 199);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'bankManagerLoginTestt')
+data.setCell(12, 2, 'com.rajat.Testcases.BankManagerLoginTest')
+data.setCell(12, 3, 3);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'addCustomerTest')
+data.setCell(13, 2, 'com.rajat.Testcases.AddCustomerTest')
+data.setCell(13, 3, 0);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'addCustomerTest')
+data.setCell(14, 2, 'com.rajat.Testcases.AddCustomerTest')
+data.setCell(14, 3, 0);
+window.suiteTableData['DataDriverFramework']= { tableData: data, tableDiv: 'times-div-DataDriverFramework'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <div id="times-div-DataDriverFramework">
+              </div> <!-- times-div-DataDriverFramework -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-DataDriverFramework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for DataDriverFramework</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">bankManagerLoginTest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">login successfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-DataDriverFramework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-DataDriverFramework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.rajat.Testcases.AddNewCustomerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.rajat.Testcases.BankManagerLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">9881 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.rajat.Testcases.BankManagerLoginTest.bankManagerLoginTest() throws java.lang.Interru...)</span>
+                <span class="method-start">9893 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bankManagerLoginTest</span>
+                <span class="method-start">9908 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.rajat.Testcases.BankManagerLoginTest.bankManagerLoginTestt() throws java.lang.Interr...)</span>
+                <span class="method-start">10338 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.rajat.Testcases.AddCustomerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">10386 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.rajat.Testcases.AddCustomerTest.addCustomerTest(java.lang.String,java.lang.String,ja...)</span>
+                <span class="method-start">10422 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addCustomerTest(tt, gupta, 201301.0, Customer added successfully, Y)</span>
+                <span class="method-start">10422 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.rajat.Testcases.AddCustomerTest.addCustomerTest(java.lang.String,java.lang.String,ja...)</span>
+                <span class="method-start">10947 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addCustomerTest(ww, gupta, 201302.0, Customer added successfully, Y)</span>
+                <span class="method-start">10948 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.rajat.Testcases.AddCustomerTest.addCustomerTest(java.lang.String,java.lang.String,ja...)</span>
+                <span class="method-start">11463 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addCustomerTest(qq, gupta, 201303.0, Customer added successfully, N)</span>
+                <span class="method-start">11464 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.rajat.Testcases.AddCustomerTest.addCustomerTest(java.lang.String,java.lang.String,ja...)</span>
+                <span class="method-start">11467 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addCustomerTest(tt, gupta, 201304.0, Customer added successfully, N)</span>
+                <span class="method-start">11468 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.rajat.Testcases.AddCustomerTest.addCustomerTest(java.lang.String,java.lang.String,ja...)</span>
+                <span class="method-start">11469 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addCustomerTest(uu, new, 201304.0, Customer added successfully, Y)</span>
+                <span class="method-start">11469 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.rajat.Testcases.AddCustomerTest.addCustomerTest(java.lang.String,java.lang.String,ja...)</span>
+                <span class="method-start">11928 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addCustomerTest(dd, new, 201304.0, Customer added successfully, Y)</span>
+                <span class="method-start">11929 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.rajat.Testcases.OpenAccountTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">12489 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.rajat.Testcases.OpenAccountTest.openAccountTest(java.lang.String,java.lang.String))</span>
+                <span class="method-start">12491 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">openAccountTest(dd new, Rupee)</span>
+                <span class="method-start">12491 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.rajat.Testcases.AddNewCustomerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">14303 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.rajat.Testcases.AddNewCustomerTest.addNewCustomerTest(java.util.Hashtable))</span>
+                <span class="method-start">14307 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addNewCustomerTest({postCode=201301.0, last_name=khan, first_name=tt, runmode=Y, alert=Customer added successfully})</span>
+                <span class="method-start">14308 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.rajat.Testcases.AddNewCustomerTest.addNewCustomerTest(java.util.Hashtable))</span>
+                <span class="method-start">14595 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addNewCustomerTest({postCode=201302.0, last_name=khan, first_name=ww, runmode=Y, alert=Customer added successfully})</span>
+                <span class="method-start">14596 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.rajat.Testcases.AddNewCustomerTest.addNewCustomerTest(java.util.Hashtable))</span>
+                <span class="method-start">15243 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addNewCustomerTest({postCode=201303.0, last_name=khan, first_name=qq, runmode=Y, alert=Customer added successfully})</span>
+                <span class="method-start">15243 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.rajat.Testcases.AddNewCustomerTest.addNewCustomerTest(java.util.Hashtable))</span>
+                <span class="method-start">15676 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addNewCustomerTest({postCode=201304.0, last_name=khan, first_name=tt, runmode=Y, alert=Customer added successfully})</span>
+                <span class="method-start">15676 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.rajat.Testcases.AddNewCustomerTest.addNewCustomerTest(java.util.Hashtable))</span>
+                <span class="method-start">16144 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addNewCustomerTest({postCode=201304.0, last_name=khan, first_name=uu, runmode=Y, alert=Customer added successfully})</span>
+                <span class="method-start">16145 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.rajat.Testcases.AddNewCustomerTest.addNewCustomerTest(java.util.Hashtable))</span>
+                <span class="method-start">16660 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addNewCustomerTest({postCode=201304.0, last_name=khan, first_name=dd, runmode=Y, alert=Customer added successfully})</span>
+                <span class="method-start">16661 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">17104 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

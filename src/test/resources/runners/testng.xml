@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DataDriverFramework">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.rajat.listners.CustomListeners" />
+	</listeners>
+	<test name="BankManagerLogin">
+		<classes>
+			<class name="com.rajat.Testcases.BankManagerLoginTest" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="AddCustomer">
+		<classes>
+			<class name="com.rajat.Testcases.AddCustomerTest" />
+		</classes>
+	</test>
+	<test name="OpenCustomer">
+		<classes>
+			<class name="com.rajat.Testcases.OpenAccountTest" />
+		</classes>
+	</test>
+	<test name="AddNewCustomer">
+		<classes>
+			<class name="com.rajat.Testcases.AddNewCustomerTest" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DataDriverFramework]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="com.rajat.listners.CustomListeners"/>
+  </listeners>
+  <test name="BankManagerLoginTest(failed)">
+    <classes>
+      <class name="com.rajat.Testcases.AddCustomerTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.rajat.Testcases.AddCustomerTest -->
+      <class name="com.rajat.Testcases.BankManagerLoginTest">
+        <methods>
+          <include name="loginAsBankManager2"/>
+          <include name="loginAsBankManager1"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.rajat.Testcases.BankManagerLoginTest -->
+    </classes>
+  </test> <!-- BankManagerLoginTest(failed) -->
+  <test name="AddCustomerTest(failed)">
+    <classes>
+      <class name="com.rajat.Testcases.AddCustomerTest">
+        <methods>
+          <include name="addCustomerTest" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.rajat.Testcases.AddCustomerTest -->
+      <class name="com.rajat.Testcases.BankManagerLoginTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.rajat.Testcases.BankManagerLoginTest -->
+    </classes>
+  </test> <!-- AddCustomerTest(failed) -->
+</suite> <!-- Failed suite [DataDriverFramework] -->

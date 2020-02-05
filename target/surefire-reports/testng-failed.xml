@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [DataDriverFramework]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="com.rajat.listners.CustomListeners"/>
+  </listeners>
+  <test name="BankManagerLogin(failed)">
+    <classes>
+      <class name="com.rajat.Testcases.AddNewCustomerTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.rajat.Testcases.AddNewCustomerTest -->
+      <class name="com.rajat.Testcases.BankManagerLoginTest">
+        <methods>
+          <include name="bankManagerLoginTest"/>
+          <include name="beforeClass"/>
+          <include name="bankManagerLoginTestt"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.rajat.Testcases.BankManagerLoginTest -->
+      <class name="com.rajat.Testcases.AddCustomerTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.rajat.Testcases.AddCustomerTest -->
+      <class name="com.rajat.Testcases.OpenAccountTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.rajat.Testcases.OpenAccountTest -->
+    </classes>
+  </test> <!-- BankManagerLogin(failed) -->
+  <test name="AddCustomer(failed)">
+    <classes>
+      <class name="com.rajat.Testcases.AddNewCustomerTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.rajat.Testcases.AddNewCustomerTest -->
+      <class name="com.rajat.Testcases.BankManagerLoginTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.rajat.Testcases.BankManagerLoginTest -->
+      <class name="com.rajat.Testcases.AddCustomerTest">
+        <methods>
+          <include name="addCustomerTest" invocation-numbers="2 3"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.rajat.Testcases.AddCustomerTest -->
+      <class name="com.rajat.Testcases.OpenAccountTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.rajat.Testcases.OpenAccountTest -->
+    </classes>
+  </test> <!-- AddCustomer(failed) -->
+</suite> <!-- Failed suite [DataDriverFramework] -->

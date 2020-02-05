@@ -1,0 +1,225 @@
+Reading data from third party--it is basicalyy a approach
+
+1..add dependency--:selenium 3.00 version
+2... log4j dependency for logs 
+3.. java mail depency for mail
+4.. reportng and google inject juice for reproting .
+5..my sql connecttor for data dabse
+
+6.. for excel we add POI dependecncy
+
+7...testng plugin dependency
+
+8.. plugin surefire for mven 
+
+Now Architecture -:
+
+in src/test/java--:   create below packages-:
+utilies,base,testcases,listners,rough
+
+Now in src/test/resources-- creete below packages
+
+excel,logs,propperties,executables
+
+Ad  testng plugin in elciplse also 
+
+nOW FIRST STEP IS TO SET PROPERTIES FILE AND THEN READ browser from config properties file 
+
+
+as 
+if(driver==null)
+{
+
+property file reading code
+}
+
+if(config.getproperty("browser").equals("chrome")
+{{
+{{
+}}
+}]
+
+
+Now after that we can let logs --:
+
+add dependenct log4j dependency log4j.jar
+
+then log4j property file and add to source folder.sec/test/java 
+
+the logger classs and use getlogger from apache  4j logger class --all done 
+
+
+Now Excel reader for data provider--:dependency-:<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.6</version>
+		</dependency>
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>1.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.xmlbeans/xmlbeans -->
+		<dependency>
+			<groupId>org.apache.xmlbeans</groupId>
+			<artifactId>xmlbeans</artifactId>
+			<version>2.6.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml-schemas</artifactId>
+			<version>3.6</version>
+		</dependency>
+
+Now then load the Excel file constructor in base class.
+
+Now implemnting RePORTNG--REPORTNG JAR AND GOOGLE JUICE JAR 
+
+nOW IN TESTNG ADD reportng listners(html andd xml class in testng)
+
+Now reporter.log("jhbfsjbfhs");
+
+IMP-:
+For generating screenshot in reportng we must write 
+System.setProperty("org.uncommons.reportng.escape-output","false");
+Reporter.log("<a target=\"_blank\" href=\"C:\\Users\\Rajat.Gupta2\\Desktop\\Capture_rajatte.png\">Screenshoot</a>");
+
+but in case of fliled testcasees we provide scren shot so noe we can implement listners
+
+
+Listeners--- implements itttestlisteners-:
+Now add to testngxml also-:
+
+Now add plugin for maven--surefire and provide testngxml path and run as maven clean 
+it will generate the result in target folders and for run with testng then it will generate in test-output folder
+while run as maven clean first of all target folder is getting deleted and rebuild 
+
+when you run as maven test ---it will execute ypur testng.xml file 
+ now one of problem occurs you will run jdk rather than on jre-:build path add jdk 
+
+Now add screehsot capture in utilities -:
+	// call interface takescreenshot
+		File file= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+//now copy abolw file to  your location 
+		FileUtils.copyDirectory(file, new File());
+
+Now stored the screen shot in --target--surefilefile -html
+
+
+Now implementing extent report in frame work -:
+
+we need following jars-:
+extentreports--dependency
+
+bahut kuch kart  hai ---:thread local all that ...
+
+
+Now creating comman data provider for all test 
+
+Now for this-:
+
+make a another class called as data provided(or we can make method in test util as well and pass Method M in it for reading the sheet)
+
+and in @test(dataprviderclass=clasname.class,dataprovider="name") we can ue reflection api in it also 
+
+Now adding multiple faliure in test cases--:by using soft assertion ---we can also use try an catch block also --but try catch not fail the test cases
+So now another method is in base class we can write method for faliure for appearing in extent report and screenshot also captureed
+
+Now add run mode in our test cases-:
+In ecxel create test suit sheet and define run mode in listeners in onTestStart
+Noow create method in comman utils for run mode --runmode method 
+define this method in onteststart listeners
+
+
+Now for data providers-:we can also crete a runmode -: throw skip exception("");
+
+
+Now we can see that if we add any parameter in data providers ecxel we hard coded it in methd as well so now we make it dynamic handles.
+
+so now we can use the concept of hash table-:(because hash table is thread safe)...
+
+
+Now finally we configure jenkins-:
+
+Steps-:Jenkins start-:
+
+1)Download jenkins.war file
+2)now open cmd and go to jenkins.war file 
+3)Now type java -jar jenkins.war
+4) Now after running th complete process open http://localhost:8080/
+5)noe manage plugin-:git and git client and cvs plugin
+Now go to configure properties-:
+procide jdk and git path over here and cvs
+C:\Program Files\Git\bin\git.exe
+C:\apache-maven-3.6.0
+C:\Program Files\Java\jdk1.8.0_191
+Now add pom.xml path to build in jenkins and add clean test 
+
+Now for report on jenkins---:what to duu
+
+
+1)We need t configure HTML plugins-:HTML publiser plugins
+
+Now go to configure and post build action publish HTML reports
+Now add directory ...html// to it and in index add extent.html
+Now again run and we ee extent report on it 
+ But on open it we did not get html fully and it break.
+Nooow for that html publiser allow a flag
+
+java -Dhundson.model.DirectoryBrowserSupport.CSP="" -jar jenkins.war run this command. or 
+
+
+
+Go to “Manage Jenkins” -> “Script console” and run below command:
+System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "")
+Now in jenkins add browser configure wheater build is run on chrome,firefox or any browser and on test enviroment or production or other in jenkins as well
+
+How ??
+How we can parameterised our build -:
+Configure-:build parametrised.(This project is parameterized)--choice parameter.
+Now in config file  use same name as browser in choice parameter
+
+Now after it we can build some code as well-:
+if (System.getenv("browser") != null && !System.getenv("browser").isEmpty()) {
+				browser = System.getenv("browser");
+			} else {
+				browser = config.getProperty("browser");
+			}
+			config.setProperty("browser", browser);
+
+
+Now config mail api to send automated mail in jenkins-:
+Now in your project first of all download mail dependency-:
+Now add mailmonitoring class and config.java class for mail
+Now how to get host address-:
+
+InetAddress.getLocalHost().getHostAddress();
+MonitoringMail mail = new MonitoringMail();
+		String messageBody = "http://" + InetAddress.getLocalHost().getHostAddress()
+				+ ":8080/job/DataDriverLiveProject/Extent_20Report/";
+		mail.sendMail(TestConfig.server, TestConfig.from, TestConfig.to, TestConfig.subject, messageBody);
+
+Add above code to your listeners-: now we have iSuiteListerns also for on suite start and end 
+
+ISuiteListener-: on in this interface we have on finish -:add code to it 
+
+
+
+Thanks and Regards
+
+Rajat Gupta
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

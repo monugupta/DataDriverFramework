@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 29.537 s <<< FAILURE! - in TestSuite
+bankManagerLoginTest(com.rajat.Testcases.BankManagerLoginTest)  Time elapsed: 0.213 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at com.rajat.Testcases.BankManagerLoginTest.bankManagerLoginTest(BankManagerLoginTest.java:28)
+
