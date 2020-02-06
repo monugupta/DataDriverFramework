@@ -35,6 +35,7 @@ import com.rajat.utilites.TestUtil;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+//Interagation og CI CD ass well in this project
 public class TestBase {
 	public static WebDriver driver;
 	public static String browser;
@@ -93,8 +94,8 @@ public class TestBase {
 				driver = new ChromeDriver();
 				log.debug("Chrome launch");
 			}
-				extent = ExtentManager
-						.GetExtent(System.getProperty("user.dir") + "\\target\\surefire-reports\\html\\Extent.html");
+			extent = ExtentManager
+					.GetExtent(System.getProperty("user.dir") + "\\target\\surefire-reports\\html\\Extent.html");
 		}
 		driver.navigate().to(config.getProperty("testsiteurl"));
 		driver.manage().window().maximize();
@@ -115,10 +116,12 @@ public class TestBase {
 		testLevelLog.set(test);
 		testLevelLog.get().log(Status.INFO,
 				"<b>" + " Execution of Test Case:- " + method.getName() + " started" + "</b>");
+		testLevelLog.get().assignAuthor("rajat Gupta");
 	}
 
 	@AfterSuite
 	public synchronized void tearDown() {
+
 		if (driver != null) {
 			driver.quit();
 			log.debug("quiting the driver");
