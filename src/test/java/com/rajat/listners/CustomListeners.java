@@ -120,7 +120,7 @@ public class CustomListeners extends TestBase implements ITestListener, ISuiteLi
 	}
 
 	public void onFinish(ISuite suite) {
-		MonitoringMail mail = new MonitoringMail();
+		/*MonitoringMail mail = new MonitoringMail();
 
 		try {
 			messageBody = "http://" + InetAddress.getLocalHost().getHostAddress()
@@ -137,7 +137,7 @@ public class CustomListeners extends TestBase implements ITestListener, ISuiteLi
 		} catch (MessagingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+		}*/
 
 	}
 
