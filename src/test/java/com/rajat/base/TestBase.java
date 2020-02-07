@@ -36,7 +36,7 @@ import com.rajat.utilites.TestUtil;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 //Interagation og CI CD ass well in this project
-//using git plugin also but fails
+//using git plugin also but fails test
 public class TestBase {
 	public static WebDriver driver;
 	public static String browser;
