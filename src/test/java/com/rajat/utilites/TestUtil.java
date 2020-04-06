@@ -23,9 +23,10 @@ public class TestUtil extends TestBase {
 		Filename = d.toString().replace(":", "_").replace(" ", "_") + ".jpg";
 		File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
-		// now copy abolw file to your location
+		// now copy above file to your location
 		FileUtils.copyFile(file,
 				new File(System.getProperty("user.dir") + "\\target\\surefire-reports\\html\\" + Filename));
+		
 	}
 
 	@DataProvider(name = "dp") // name of data provider
@@ -45,7 +46,7 @@ public class TestUtil extends TestBase {
 	}
 
 	// data provider for hashtable
-	@DataProvider(name = "dph") // name of data provider
+	@DataProvider(name = "dph",parallel=true) // name of data provider
 	public static Object[][] getDataHashtable(Method m) {
 		System.out.println(m.getName());
 		String sheetName = m.getName();// this can pick the test name so please keep sheetname same as test name.

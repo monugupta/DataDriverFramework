@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="BankManagerLoginTest"
+<testsuite name="BankManagerLogin"
            tests="2"
            failures="1"
            errors="0"
            skipped="1"
-           time="0.561">
+           time="0.207">
   <properties />
-            <testcase name="loginAsBankManager1" time="0.348" classname="com.rajat.Testcases.BankManagerLoginTest">
-                <failure type="java.lang.ClassCastException"
-                  message="com.aventstack.extentreports.ExtentTest cannot be cast to com.aventstack.extentreports.markuputils.Markup"
+            <testcase name="bankManagerLoginTest" time="0.198" classname="com.rajat.Testcases.BankManagerLoginTest">
+                <failure type="java.lang.AssertionError"
+                  message="null"
               >
-<![CDATA[java.lang.ClassCastException: com.aventstack.extentreports.ExtentTest cannot be cast to com.aventstack.extentreports.markuputils.Markup
-  com.rajat.base.TestBase.verfiyEquals(TestBase.java:140)
-  com.rajat.Testcases.BankManagerLoginTest.loginAsBankManager1(BankManagerLoginTest.java:18)
+<![CDATA[java.lang.AssertionError: null
+  org.testng.Assert.fail(Assert.java:94)
+  org.testng.Assert.fail(Assert.java:101)
+  com.rajat.Testcases.BankManagerLoginTest.bankManagerLoginTest(BankManagerLoginTest.java:28)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -42,7 +43,7 @@
 
           </testcase>
   
-            <testcase name="loginAsBankManager2" time="0.0" classname="com.rajat.Testcases.BankManagerLoginTest">
+            <testcase name="bankManagerLoginTestt" time="0.0" classname="com.rajat.Testcases.BankManagerLoginTest">
           <skipped />
     </testcase>
   

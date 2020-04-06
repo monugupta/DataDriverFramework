@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AddNewCustomer"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="2.353">
+  <properties />
+  
+  
+            <testcase name="addNewCustomerTest" time="0.407" classname="com.rajat.Testcases.AddNewCustomerTest" />
+                <testcase name="addNewCustomerTest" time="0.378" classname="com.rajat.Testcases.AddNewCustomerTest" />
+                <testcase name="addNewCustomerTest" time="0.361" classname="com.rajat.Testcases.AddNewCustomerTest" />
+                <testcase name="addNewCustomerTest" time="0.356" classname="com.rajat.Testcases.AddNewCustomerTest" />
+                <testcase name="addNewCustomerTest" time="0.351" classname="com.rajat.Testcases.AddNewCustomerTest" />
+                <testcase name="addNewCustomerTest" time="0.500" classname="com.rajat.Testcases.AddNewCustomerTest" />
+      
+</testsuite>

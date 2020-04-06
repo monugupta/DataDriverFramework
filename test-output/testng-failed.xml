@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.rajat.Testcases.AddNewCustomerTest">
+      <class name="com.rajat.rough.SoftAssert">
         <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="beforeClass"/>
-          <include name="addNewCustomerTest"/>
+          <include name="doTest"/>
         </methods>
-      </class> <!-- com.rajat.Testcases.AddNewCustomerTest -->
+      </class> <!-- com.rajat.rough.SoftAssert -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

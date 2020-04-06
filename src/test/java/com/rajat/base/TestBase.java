@@ -22,6 +22,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -108,6 +109,7 @@ public class TestBase {
 	public synchronized void beforeClass() {
 		ExtentTest test = extent.createTest(getClass().getSimpleName());
 		classLevelLog.set(test);
+		System.out.println("test");
 
 	}
 
@@ -115,6 +117,7 @@ public class TestBase {
 	public synchronized void beforeMethod(Method method) {
 		ExtentTest test = classLevelLog.get().createNode(method.getName());
 		testLevelLog.set(test);
+		//testLevelLog.set(test);
 		testLevelLog.get().log(Status.INFO,
 				"<b>" + " Execution of Test Case:- " + method.getName() + " started" + "</b>");
 		testLevelLog.get().assignAuthor("rajat Gupta");
@@ -142,6 +145,8 @@ public class TestBase {
 
 	public static void verfiyEquals(String expected, String actual) throws IOException {
 		try {
+			SoftAssert s=new SoftAssert();
+		    s.assertEquals("Hello", "Hey","message");
 			Assert.assertEquals(actual, expected);
 		} catch (Throwable t) {
 			TestUtil.captureScreenshot();
